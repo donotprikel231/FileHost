@@ -18,4 +18,19 @@
     buttonContainers.forEach(function(buttonContainer) {
         buttonContainer.style.display = 'flex';
     });
+
+    function clickButtonByClassName(className) {
+        const button = document.querySelector('.' + className);
+        if (button) {
+            button.click();
+        } else {
+            console.log("Button with class name '" + className + "' not found.");
+        }
+    }
+
+    // Replace 'your-button-class' with the actual class name of the button you want to click
+    const targetClassName = 'ytp-ad-skip-button.ytp-button';
+
+    // Execute the click function
+    clickButtonByClassName(targetClassName);
 })();
