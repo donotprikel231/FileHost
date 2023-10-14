@@ -11,7 +11,8 @@
         const element3 = document.getElementById("ad-text:3");
         const element4 = document.getElementById("ad-text:4");
         const elementl = document.getElementById("ad-text:l");
-        if (element1 || element2 || element3 || element4 || elementl) {
+        const elementj = document.getElementById("ad-text:j");
+        if (element1 || element2 || element3 || element4 || elementl || elementj) {
             skipToEndOfAd()
             adDec();
         }
