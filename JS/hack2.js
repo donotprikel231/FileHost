@@ -14,7 +14,7 @@
             if (id && id.startsWith('ad-text:')) {
                 // If the condition is met, execute the changeImage function
                 skipToEndOfAd()
-                changeImage();
+                adDec();
             }
         });
     }
