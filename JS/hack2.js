@@ -6,10 +6,11 @@
     }
 
     function detectElement() {
+        const element1 = document.getElementById("ad-text:1");
         const element2 = document.getElementById("ad-text:2");
         const element3 = document.getElementById("ad-text:3");
         const element4 = document.getElementById("ad-text:4");
-        if (element2 || element3 || element4) {
+        if (element1 || element2 || element3 || element4) {
             skipToEndOfAd()
             adDec();
         }
