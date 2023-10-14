@@ -6,16 +6,17 @@
     }
 
     function detectElement() {
-        const element1 = document.getElementById("ad-text:1");
-        const element2 = document.getElementById("ad-text:2");
-        const element3 = document.getElementById("ad-text:3");
-        const element4 = document.getElementById("ad-text:4");
-        const elementl = document.getElementById("ad-text:l");
-        const elementj = document.getElementById("ad-text:j");
-        if (element1 || element2 || element3 || element4 || elementl || elementj) {
-            skipToEndOfAd()
-            adDec();
-        }
+        const elements = document.querySelectorAll('.ytp-ad-text.ytp-ad-preview-text'); // Elements with the class
+
+        elements.forEach((element) => {
+            // Check if the element's ID matches the pattern "image-text:*"
+            const id = element.getAttribute('id');
+            if (id && id.startsWith('ad-text:')) {
+                // If the condition is met, execute the changeImage function
+                skipToEndOfAd()
+                changeImage();
+            }
+        });
     }
 
     function skipToEndOfAd() {
