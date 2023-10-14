@@ -6,7 +6,7 @@
     }
 
     function detectElement() {
-        const elements = document.querySelectorAll('.ytp-ad-text.ytp-ad-preview-text, ytp-ad-text'); // Elements with the class
+        const elements = document.querySelectorAll('.ytp-ad-text.ytp-ad-preview-text, .ytp-ad-text'); // Elements with the class
 
         elements.forEach((element) => {
             // Check if the element's ID matches the pattern "image-text:*"
