@@ -24,8 +24,10 @@
             console.log("Button with class name '" + className + "' not found.");
         }
     }
-
-    const targetClassName = 'ytp-ad-skip-button.ytp-button';
-
-    clickButtonByClassName(targetClassName);
+    
+    const targetClassName1 = 'ytp-ad-skip-button.ytp-button';
+    const targetClassName2 = 'ytp-ad-skip-button-modern.ytp-button';
+    
+    clickButtonByClassName(targetClassName1);
+    clickButtonByClassName(targetClassName2);
 })();
